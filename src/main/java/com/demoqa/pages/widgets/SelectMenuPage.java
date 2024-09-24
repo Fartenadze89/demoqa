@@ -15,13 +15,11 @@ public class SelectMenuPage extends WidgetsPage {
 
     public void selectStandardMulti(String text) {
         scrollToElementJS(standardMultiSelect);
-        Select select = new Select(find(standardMultiSelect));
         selectByVisibleText(standardMultiSelect, text);
     }
 
     public void selectStandardMulti(int index) {
         scrollToElementJS(standardMultiSelect);
-        Select select = new Select(find(standardMultiSelect));
         selectByIndex(standardMultiSelect, index);
     }
 
