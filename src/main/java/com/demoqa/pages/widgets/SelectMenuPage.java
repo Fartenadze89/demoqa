@@ -10,27 +10,27 @@ import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class SelectMenuPage extends WidgetsPage {
 
-    private By standardMultiSelectDropDown = By.id("cars");
+    private By standardMultiSelect = By.id("cars");
 
 
     public void selectStandardMulti(String text) {
-        scrollToElementJS(standardMultiSelectDropDown);
-        Select select = new Select(find(standardMultiSelectDropDown));
-        selectByVisibleText(standardMultiSelectDropDown, text);
+        scrollToElementJS(standardMultiSelect);
+        Select select = new Select(find(standardMultiSelect));
+        selectByVisibleText(standardMultiSelect, text);
     }
 
     public void selectStandardMulti(int index) {
-        scrollToElementJS(standardMultiSelectDropDown);
-        Select select = new Select(find(standardMultiSelectDropDown));
-        selectByIndex(standardMultiSelectDropDown, index);
+        scrollToElementJS(standardMultiSelect);
+        Select select = new Select(find(standardMultiSelect));
+        selectByIndex(standardMultiSelect, index);
     }
 
     public void deselectStandardMulti(String value) {
-        scrollToElementJS(standardMultiSelectDropDown);
-        deselectByValue(standardMultiSelectDropDown, value);
+        scrollToElementJS(standardMultiSelect);
+        deselectByValue(standardMultiSelect, value);
     }
 
     public List<String> getAllSelectedStandardMultiOptions() {
-        return getAllSelectedOptions(standardMultiSelectDropDown);
+        return getAllSelectedOptions(standardMultiSelect);
     }
 }
