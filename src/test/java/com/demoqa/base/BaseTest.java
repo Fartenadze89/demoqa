@@ -9,10 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -40,6 +37,7 @@ public class BaseTest {
         setUtilityDriver();
         homePage = new HomePage();
     }
+    //somethings
 
     @AfterMethod
     public void takeFailedResultScreenshot(ITestResult testResult) {

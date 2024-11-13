@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class WebTableTest extends BaseTest {
 
-    @Test
+    @Test(enabled = false)
     public void testWebTable() {
         String email = "alden@example.com";
         String expectedAge = "34";

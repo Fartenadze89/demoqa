@@ -36,3 +36,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+# Ignore all .txt files
+*.txt
+
+# Except for this specific file
+!keepme.txt
