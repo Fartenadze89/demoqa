@@ -41,6 +41,7 @@ public class BaseTest {
     //somethings
 
     //somethings
+    //somethings
 
     @AfterMethod
     public void takeFailedResultScreenshot(ITestResult testResult) {
