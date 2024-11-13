@@ -39,6 +39,7 @@ public class BaseTest {
     }
     //somethings
     //somethings
+
     //somethings
 
     @AfterMethod
