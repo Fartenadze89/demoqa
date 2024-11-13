@@ -38,6 +38,7 @@ public class BaseTest {
         homePage = new HomePage();
     }
     //somethings
+    //somethings
 
     @AfterMethod
     public void takeFailedResultScreenshot(ITestResult testResult) {
